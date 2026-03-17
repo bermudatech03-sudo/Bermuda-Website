@@ -3,8 +3,8 @@ import { useState } from "react";
 import Footer from "../components/Footer";
 import "../styles/Contact.css";
 
-const SUPABASE_URL = "https://YOUR_PROJECT.supabase.co";
-const SUPABASE_ANON_KEY = "YOUR_ANON_KEY";
+const SUPABASE_URL = import.meta.env.SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env.SUPABASE_ANON_KEY;
 
 async function submitLead(data) {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
@@ -39,7 +39,7 @@ export default function Contact({ addToast }) {
       await submitLead({ ...form, created_at: new Date().toISOString() });
       setSent(true);
     } catch {
-      addToast("Submission failed. Email us at hello@bermudatech.in", "error");
+      addToast("Submission failed. Email us at bermudatech03@gmail.com", "error");
     } finally { setLoading(false); }
   };
 
