@@ -3,8 +3,8 @@ import { useState } from "react";
 import Footer from "../components/Footer";
 import "../styles/Contact.css";
 
-const SUPABASE_URL = import.meta.env.SUPABASE_URL;
-const SUPABASE_ANON_KEY = import.meta.env.SUPABASE_ANON_KEY;
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 async function submitLead(data) {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
