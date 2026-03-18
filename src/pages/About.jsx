@@ -23,8 +23,8 @@ const VALS = [
 
 const STATS = [
   { v:'5+',  l:'Years in business'  },
-  { v:'150+',l:'Projects delivered' },
-  { v:'30+', l:'Countries reached'  },
+  { v:'50+',l:'Projects delivered' },
+  // { v:'30+', l:'Countries reached'  },
   { v:'98%', l:'Client satisfaction'},
 ]
 

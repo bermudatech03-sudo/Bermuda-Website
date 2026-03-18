@@ -33,7 +33,7 @@ function Hero({ setPage }) {
             <button className="btn-outline" onClick={() => setPage("contact")}>Start a Project</button>
           </div>
           <div className="hero__stats">
-            {[{ v: "20+", s: "Projects Shipped" }, { v: "₹1Cr+", s: "Client Revenue Generated" }, { v: "98%", s: "Client Retention" }].map((st, i) => (
+            {[{ v: "20+", s: "Projects Shipped" }, { v: "₹10L+", s: "Client Revenue Generated" }, { v: "98%", s: "Client Retention" }].map((st, i) => (
               <div key={i} className="hero__stat">
                 <span className="hero__stat-val">{st.v}</span>
                 <span className="hero__stat-sub">{st.s}</span>
